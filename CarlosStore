@@ -1,0 +1,21 @@
+magaza.xml
+<View id="my_custom_store">
+  <Attributes>
+    <Table id="item_link">
+      <Pair key="icon"><String>/dev_hdd0/game/XREG00001/USRDIR/icon.png</String></Pair>
+    </Table>
+  </Attributes>
+  <Items>
+    <Query class="type:x-xmb/folder-item" key="game_download" src="#game_links" item_links="item_link" title="Oyunlar İndir" any="true"/>
+  </Items>
+</View>
+
+<View id="game_links">
+  <Items>
+    <Item class="type:x-xmb/module-action" title="Minecraft TR Yama" Description="Minecraft Türkçe Yama Paketi">
+      <Arguments>
+        <String>download_url:https://github.com/kullaniciadin/depon/raw/main/minecraft_tr.pkg</String>
+      </Arguments>
+    </Item>
+  </Items>
+</View>
